@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W1M-Su-aqa">
+                            <navigationBar contentMode="center" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W1M-Su-aqa">
                                 <rect key="frame" x="0.0" y="20" width="600" height="44"/>
                                 <items>
                                     <navigationItem title="Aaron's Map" id="T7r-8Y-IqJ"/>
@@ -28,6 +28,9 @@
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="W1M-Su-aqa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IqL-Uj-Vlw"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="mapview" destination="vGL-tk-pVu" id="OE4-6H-RCN"/>
